@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta Malar", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --Very_dark_blue_main_BG: hsl(217, 54%, 11%);
+  --Very_dark_blue_card_BG: hsl(216, 50%, 16%);
+  --Very_dark_blue_line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Soft_blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+body {
+  background-color: var(--Very_dark_blue_main_BG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 852px;
+}
+p {
+  font-size: 18px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--White);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  background-color: var(--Very_dark_blue_card_BG);
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  -webkit-box-shadow: -5px 10px 28px 4px rgb(7, 26, 31);
+  -moz-box-shadow: -5px 10px 28px 4px rgb(7, 26, 31);
+  box-shadow: -5px 10px 28px 4px rgb(7, 26, 31);
+}
+.equilibrium {
+  width: 100%;
+  border-radius: 10px;
+}
+.equilibrium {
+  position: relative;
+}
+.colorPlate {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  top: 150px;
+  width: 300px;
+  height: 32%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+.colorPlate:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.colorPlate img {
+  width: 50px;
+}
+h3 {
+  margin: 10px 0px;
+  color: var(--White);
+}
+p {
+  color: var(--Soft_blue);
+  font-size: 16px;
+}
+span {
+  color: var(--Cyan);
+}
+.name {
+  color: var(--White);
+  transition: opacity 0.5s ease-in-out;
+}
+.name:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 10px;
+  border-bottom: 1px solid var(--Very_dark_blue_line);
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--Cyan);
+}
+.profile span {
+  margin-left: 10px;
+}
+.create_by {
+  color: var(--Soft_blue);
+}
